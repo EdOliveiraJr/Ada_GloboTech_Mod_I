@@ -1,9 +1,9 @@
 
-#05/05/25
+#AULA 05/05/25
 #1. Crie um dicionário chamado aluno com as chaves "nome", "idade" e "nota". 
 #Atribua valores fictícios e imprima cada valor individualmente.
 # aluno = {
-#   "nome": "Joao", 
+#   "nome": "João", 
 #   "idade": 20, 
 #   "nota": 8.5
 # }
@@ -23,8 +23,10 @@
 # # Guarde essas informações em um dicionário e exiba-o no final.
 # produto = {}
 # produto["nome"] = input("Digite o nome do produto: ")
-# produto["preco"] = float(input("Digite o preço do produto: "))
+# produto["preço"] = float(input("Digite o preço do produto: "))
 # print(produto)
+
+#AULA 07/05/2025
 
 # 4.Dado o dicionário:
 # Escreva um código que:
@@ -35,7 +37,7 @@
 
 # frutas = {"maçã": 3, "banana": 5, "laranja": 2}
 
-# fruta = input("Dgite o nome de uma fruta: ")
+# fruta = input("Digite o nome de uma fruta: ")
 
 # if fruta in frutas :
 #   print(f'{fruta}: {frutas[fruta]} unidades')
@@ -45,7 +47,7 @@
 # 5. Crie um dicionário chamado notas_alunos, onde a chave é o nome do aluno e o valor é a média final.
 #  Depois, mostre apenas os alunos com média maior ou igual a 7.
 
-# notas_alunos = {'Joao':  2.0, 'Lucas': 5.0, 'Pedro': 8.0, 'Fátima': 9.0, 'Joana': 10}
+notas_alunos = {'João':  2.0, 'Lucas': 5.0, 'Pedro': 8.0, 'Fátima': 9.0, 'Joana': 10}
 
 for aluno in notas_alunos :
   if notas_alunos[aluno] >= 7 :
