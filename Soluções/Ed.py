@@ -185,25 +185,74 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 # Você trabalha com um sistema interno da Globo Educação. Precisa criar uma função que receba o nome de um aluno e retorne suas informações formatadas (curso, média e status).
 # Dicionário com dados de 4 alunos
-alunos = {
-    'Ana Clara': {'curso': 'Jornalismo', 'media': 8.5, 'status': 'Aprovada'},
-    'Bruno Silva': {'curso': 'Engenharia de Dados', 'media': 6.8, 'status': 'Aprovado'},
-    'Carlos Lima': {'curso': 'Publicidade', 'media': 4.2, 'status': 'Reprovado'},
-    'Débora Souza': {'curso': 'Design Gráfico', 'media': 9.3, 'status': 'Aprovada'}
-}
+# alunos = {
+#     'Ana Clara': {'curso': 'Jornalismo', 'media': 8.5, 'status': 'Aprovada'},
+#     'Bruno Silva': {'curso': 'Engenharia de Dados', 'media': 6.8, 'status': 'Aprovado'},
+#     'Carlos Lima': {'curso': 'Publicidade', 'media': 4.2, 'status': 'Reprovado'},
+#     'Débora Souza': {'curso': 'Design Gráfico', 'media': 9.3, 'status': 'Aprovada'}
+# }
 
-def exibe_dados_aluno(nome):
-    aluno = alunos.get(nome)
-    if aluno:
-        print(f"Nome: {nome}")
-        print(f"Curso: {aluno['curso']}")
-        print(f"Média: {aluno['media']}")
-        print(f"Status: {aluno['status']}")
-    else:
-        print("Aluno não encontrado.")
+# def exibe_dados_aluno(nome):
+#     aluno = alunos.get(nome)
+#     if aluno:
+#         print(f"Nome: {nome}")
+#         print(f"Curso: {aluno['curso']}")
+#         print(f"Média: {aluno['media']}")
+#         print(f"Status: {aluno['status']}")
+#     else:
+#         print("Aluno não encontrado.")
 
-entrada = input("Digite o nome do aluno (ou 'sair' para encerrar): ")
+# entrada = input("Digite o nome do aluno (ou 'sair' para encerrar): ")
 
-while entrada.lower() != "sair":
-  exibe_dados_aluno(entrada)
-  entrada = input("Digite o nome do aluno (ou 'sair' para encerrar): ")
+# while entrada.lower() != "sair":
+#   exibe_dados_aluno(entrada)
+#   entrada = input("Digite o nome do aluno (ou 'sair' para encerrar): ")
+
+# 14/05/2025
+
+# Faça uma calculadora que você digite os valores e o operador (soma, subtração e etc) e ele ira fazer a operação aritmetica.
+# def calculadora(num1, num2, operador):
+#     if operador == '+':
+#         return num1 + num2
+#     elif operador == '-':
+#         return num1 - num2
+#     elif operador == '*':
+#         return num1 * num2
+#     elif operador == '/':
+#         return num1 / num2
+#     else:
+#         return "Operador inválido"
+
+# resultado = calculadora(calculadora(10, 5, '+') , calculadora(10, 5, '-') , '*')
+
+# print(f"Resultado: {resultado}")
+
+# 3 Você recebeu uma lista com a duração (em minutos) de cada programa da Globo em um dia. 
+# Escreva uma função chamada `filtrar_programas_longo` que receba a lista e retorne outra lista apenas com os programas que duram **mais de 60 minutos**.
+# Use compreensão de listas.
+
+# duracoes = [45, 90, 30, 120, 60]
+
+# def filtrar_programas_longo(duracoes : list, limite=60 ) -> list:
+#     return [duracao for duracao in duracoes if duracao > limite]
+
+# print(filtrar_programas_longo(duracoes, 40))
+# print(filtrar_programas_longo(duracoes))
+
+
+# 5 Crie uma função chamada `gerar_episodios` que receba dois parâmetros: o nome de uma série da Globo (ex: "Sob Pressão") e o número de episódios. 
+# A função deve retornar uma lista com os nomes dos episódios, numerados.
+# Deve retornar: ['Sob Pressão - Episódio 1', 'Sob Pressão - Episódio 2', 'Sob Pressão - Episódio 3']
+# Use **laço `for`.
+
+# def gerar_episodios(nome_serie, num_episodios):
+#     episodios = []
+#     for i in range(1, num_episodios + 1):
+#         episodios.append(f"{nome_serie} - Episódio {i}")
+#     return episodios
+
+# def imprime_episodios(lista : list):
+#     for episodio in lista:
+#         print(episodio)
+
+# imprime_episodios(gerar_episodios("Sob Pressão", 10))
